@@ -1,18 +1,26 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import postData from './application-data';
+import { SearchBar } from './components/SearchBar';
+import PostContainer from './components/PostContainer';
 
 class App extends Component {
+  constructor() {
+    super()
+    this.state = {
+      postData: []
+    }
+  }
+  componentDidMount() {
+    this.setState({
+      postData: postData
+    })
+  }
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div className="mainBody">
+        <PostContainer posts={this.state.postData} />
+        <SearchBar />        
       </div>
     );
   }

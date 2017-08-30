@@ -1,21 +1,110 @@
-.App {
-  text-align: center;
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;}
+body {
+  background-color: #fafafa;
+      font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 18px;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+a:hover {
+  cursor:pointer;
 }
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.spriteBg {
+  background-image: url('assets/fc4759.png');
+  background-repeat: no-repeat;
 }
+.spriteBg2 {
+  background-image: url('assets/db9f2a.png');
+  background-repeat: no-repeat;
+}
+a.logoLink {
+    background-position: -177px 0;
+    height: 35px;
+    width: 176px;
+    color:transparent;
+    display:block;
+}
+.navContainer {
+  width:1010px;
+  height:77px;
+  padding:10px 0;
+  margin:0 auto;
+  position:relative;
+  top:15px;
+}
+.topNav {
+  background-color:white;
+  border-bottom:1px solid rgba(0,0,0,.1);
+  width:100%;
+  position:fixed;
+  top:0;
+}
+.topNav ul {}
+.topNav ul li {
+  display: inline-block;
+}
+.topNav ul .lev1 {}
+.topNav ul .lev1 input {
+  background-color: #fafafa;
+  border: solid 1px #dbdbdb;
+  border-radius: 3px;
+  color: #262626;
+  font-size: 14px;
+  outline: none;
+  padding: 3px 10px 3px 26px;
+  z-index: 2;
+  text-align: center
+}
+.topNav ul .lev1 input:focus {
+  text-align:left;
+}
+.topNav ul .lev1:first-child {
+  float:left;
+}
+.topNav ul .lev1:nth-child(2) {
+  margin-left:200px;
+}
+.topNav ul .lev1:last-child {
+  float:right;
+}
+.topNav ul .lev1 ul {}
+.topNav ul .lev1 ul .lev2 {
+  margin-left:25px;
+}
+.topNav ul .lev1 ul .lev2 a {
+    flex-shrink: 0;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    box-sizing: border-box;
+    align-items: stretch;
+    border: 0 solid #000;
+    -webkit-box-align: stretch;
+    height: 24px;
+    width: 24px;
 
-.App-intro {
-  font-size: large;
+}
+.topNav ul .lev1 ul .lev2:first-child a {
+    background-position: -244px -352px;
+}
+.topNav ul .lev1 ul .lev2:nth-child(2) a {
+      background-position: -322px -352px;
+}
+.topNav ul .lev1 ul .lev2:last-child a {
+  background-position: -104px -384px;
+}
+.mainBody {
+  padding-top:125px;
+}
+.bodyContainer {
+  width:600px;
+  margin:0 auto;
 }
 
 @keyframes App-logo-spin {
